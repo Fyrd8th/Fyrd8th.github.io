@@ -1,0 +1,72 @@
+body,h1,h2,h3,h4,h5 {
+    font-family: "Raleway", sans-serif
+}
+/** COLORS **/
+/* light pinks */
+.w3-theme {color:#616161 !important; background-color:#fffafa !important}
+.w3-text-theme {color:#fffafa !important}
+.w3-border-theme {border-color:#fffafa !important}
+.w3-hover-theme:hover {color:#616161 !important; background-color:#fffafa !important}
+.w3-hover-text-theme:hover {color:#fffafa !important}
+.w3-hover-border-theme:hover {border-color:#fffafa !important}
+
+/* light mint */
+.w3-theme-light2 {color:#616161 !important; background-color:#f0fffa !important}
+/* light grey */
+.w3-theme-light {color:#616161 !important; background-color:#f1f1f1 !important}
+/* medium grey */
+.w3-theme-medium {color:#fff !important; background-color:#9e9e9e !important}
+/* dark grey */
+.w3-theme-dark {color:#f1f1f1 !important; background-color:#616161 !important}
+/* salmon pink */ 
+.w3-theme-action {color:#fff !important; background-color:#ffbeaf !important}
+
+/** POSITIONS **/
+.w3-row-padding {
+    margin-top: 12px;
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.w3-third img{
+    opacity: 0.8; 
+    cursor: pointer;
+}
+
+/** MISC **/
+/* lightbox */
+.w3-third img:hover{
+    opacity: 1;
+}
+
+.w3-modal-content {
+    width: 100%;
+    text-align: center;
+}
+
+.w3-hover-light-grey:hover {
+    background-color: #ccc !important;
+}
+
+.w3-theme-portfolio-image {
+    height: 60vh;
+    margin: 24px;
+}
+
+.w3-theme-portfolio-image img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.w3-theme-portfolio-caption {
+    padding: 0 20%;
+}
+
+/* Resume button */
+button a {
+    text-decoration: none;
+}

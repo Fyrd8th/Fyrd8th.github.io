@@ -1,12 +1,147 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>Hello Portfolio!</p>
-    <p id="test"></p>
-    <script type="text/javascript" src="client.js"></script>
-  </body>
+<title>Sade Sirén Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="mainstyle.css">
+<body class="w3-theme-light w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-theme w3-bar-block w3-animate-left w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+      <h3 class="w3-padding-64 w3-center"><b>SADE<br>SIRÉN</b></h3>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-hide-large smallmenuclose">CLOSE</a>
+      <a href="#" class="w3-bar-item w3-button smallmenuclose">PORTFOLIO</a> 
+      <a href="#about" class="w3-bar-item w3-button smallmenuclose">ABOUT ME</a> 
+      <a href="#contact" class="w3-bar-item w3-button smallmenuclose">CONTACT</a>
+    </nav>
+    
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding-16" style="background-color:#fffafa">
+      <span class="w3-left w3-padding">SADE SIRÉN</span>
+      <a href="javascript:void(0)" id="smallmenu" class="w3-right w3-button w3-theme">☰</a>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity smallmenuclose" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+    
+    <!-- Push down content on small screens --> 
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+      
+    <!-- Photo grid -->
+    <div class="w3-row-padding">
+        <div class="w3-third">
+          <img src="img/aoa.gif" alt="Anxiety of Alina" data-caption="A mobile game with unique hand-painted graphics, where you try to defend the little Alina who is being attacked by monsters spawning from the shadows. You only have her flashlight to protect her, and the batteries are running out...<br><br>I worked in the project as a producer as well as concept artist, graphics designer, 2D animator and technical artist to a smaller extent.">
+          <img src="img/GoQuesting-logo.png" alt="Go Questing" data-caption="A design for a mobile game that won Turku Future Hackathon 2018. The game is about creating quests for other players that would involve mixed reality events and real-life meetings between players. The game was intended to help Turku campus area students to find new friends who'd enjoy similar activities.">
+        </div>
+        <div class="w3-third">
+            <img src="img/fuzzyrunners.png" alt="Fuzzy Runners" data-caption="A fast-paced mobile game where you try to beat your opponent to the finish line. The game has a tactical twist: you will design the race track your opponent must face!<br><br>I worked in the project as a game producer, character artist and 2D animator.">
+        </div>
+        <div class="w3-third">
+            <img src="img/dontbreakzen.png" alt="Don't Break the Zen" data-caption="A mobile game made for Global Game Jam 2019. You try to keep your focus on getting higher up towards nirvana, while distractions are coming your way.<br><br>I worked as a writer and background artist in the game.">
+        </div>
+    </div>
+      
+    <!-- Modal for full size images on click-->
+    <div id="lightbox" class="w3-modal w3-theme-dark" style="padding-top:0">
+        <div class="w3-theme-medium w3-container w3-modal-content">
+            <span class="w3-button w3-theme-medium w3-hover-theme w3-xlarge w3-display-topright">&times;</span>
+            <h2 id="portfolio-heading"></h2>
+        </div>
+        <div class="w3-animate-zoom w3-theme-portfolio-image w3-modal-content w3-theme-dark">
+            <img id="img01" class="w3-card-4">
+        </div>
+        <p id="portfolio-caption" class="w3-modal-content w3-theme-dark w3-theme-portfolio-caption"></p>
+    </div>
+    
+    <!-- About section -->
+    <div class="w3-container w3-theme-dark w3-center w3-padding-32" id="about">
+        <h4><b>About Me</b></h4>
+        <img src="img/20190105portrait.png" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>Sade Sirén</h4>
+            <p>CEO of a game company Vainary as well as a Software Developer at Lingsoft Language Services.</p>
+            <p>At Vainary my resposibilities extend above the managerial tasks of a CEO. I also work as a game producer in out game projects, which span from mobile to PC games. When the projects needs it, I do writing for background story, character development and dialogues as well as work as a concept artist or 2D artist. Because of my engineering degree in Game Technology, I am also familiar with programming games in Unity 3D engine so I have a full view of the game development process. What I love most about game projects though, is completing it with a motivated team. Therefor my job as a producer, keeping the development in schedule, making sure that documentation is orderly and transitions between different tasks are as smooth as possible is what really drives me in the game business.</p>
+            <p>As a Software developer my main focus is on Node JS applications. With every new project, I want to push myself to learn new methods of making scalable, reliable and modular code. I've worked with websockets and streams and have a drive for test-oriented programming style.</p>
+            <p>In my spare time - when I have any - I work on my own personal game or writing projects, paint digital art and take photographs as a hobby.</p>
+            <hr class="w3-opacity">
+            <h4 class="w3-padding-16">Technical Skills</h4>
+            <p class="w3-wide">Game Development</p>
+            <div class="w3-theme">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+            </div>
+            <p class="w3-wide">Web Development Backend</p>
+            <div class="w3-theme">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+            </div>
+            <p class="w3-wide">Web Design Frontend</p>
+            <div class="w3-theme">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:75%">75%</div>
+            </div>
+            <p class="w3-wide">Photoshop</p>
+            <div class="w3-theme">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+            </div>
+            <p><button id="resume" class="w3-button w3-theme-light w3-padding-large w3-margin-top w3-margin-bottom"><a href="files/resume_sadesiren.pdf" target="_blank" download="resume">Download Resume</a></button></p>
+            <hr class="w3-opacity">
+        </div>
+      </div>
+    
+    <!-- Contact section -->
+    <div class="w3-container w3-theme-light w3-padding-32 w3-padding-large" id="contact">
+        <div class="w3-content" style="max-width:600px">
+            <h4 class="w3-center"><b>Contact Me</b></h4>
+            <p>Interested in including me in your project? Or want me to produce a game for your gamification or serious game needs?</p>
+            <p>mail: sade@vainary.fi</p>
+            <p>tel: +358 505752584</p>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-theme-medium">  
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                <h3>MENU</h3>
+                <a href="#" class="w3-bar-item w3-button">Porfolio</a><br>
+                <a href="#about" class="w3-bar-item w3-button">About Me</a><br>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a><br>     
+            </div>
+
+            <div class="w3-third">
+                <h3>VAINARY AY</h3>
+                <p>I'm the CEO of <a href="https://vainary.fi">Vainary ay</a>, a game company based in Turku, Finland. We believe in games that you can just pick up and play, but where there is always something new around the corner. We make entertainment games for both mobile and PC platforms and offer our game design expertise for corporate clients who are looking to introduce gamification into their work environments.</p>
+            </div>
+        
+            <div class="w3-third">
+                <h3>OTHER PORTFOLIOS</h3>
+                <ul class="w3-ul">
+                    <li class="w3-padding-16 w3-hover-light-grey">
+                        <a href="https://www.linkedin.com/in/sade-sir%C3%A9n/" class="w3-large">LinkedIn</a>
+                    </li>
+                    <li class="w3-padding-16 w3-hover-light-grey">
+                        <a href="https://www.artstation.com/fyrd8th" class="w3-large">ArtStation</a>
+                    </li>
+                    <li class="w3-padding-16 w3-hover-light-grey">
+                        <a href="https://github.com/Fyrd8th" class="w3-large">GitHub</a>
+                    </li>
+                    <li class="w3-padding-16 w3-hover-light-grey">
+                        <a href="http://sadesirn.portfoliobox.net/" class="w3-large">PortfolioBox</a>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
+    </footer>
+    
+    <!-- End page content -->
+    </div>
+
+    <script type ="text/javascript" src="client.js"></script>
+
+</body>
 </html>
